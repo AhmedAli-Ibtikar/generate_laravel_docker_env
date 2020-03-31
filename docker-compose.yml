@@ -9,7 +9,7 @@ services:
       - ./images/nginx/nginx.conf:/etc/nginx/conf.d/mysite.template
       - ./app:/var/www/html/app/
     ports:
-      - 2000:80
+      - '2000:80'
     environment:
       FPM: 'php_app:9000'
       ROOT: '/var/www/html/app/public'
